@@ -1,5 +1,15 @@
 exports.min = function min(array) {
-    return 0;
+    let minNum = 0;
+    if (array === undefined || array.length == 0) {
+        return 0;
+    } else {
+        for (let i = 0; i < array.length; i++) {
+            if (minNum > array[i]) {
+                minNum = array[i];
+            }
+        }
+        return minNum;
+    }
 };
 
 exports.max = function max(array) {
